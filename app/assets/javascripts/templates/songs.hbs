@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="large-4 columns">
+    <ul>
+      {{#each}}
+        {{#linkTo "songs.show" this}}
+          <li>{{name}}</li>
+        {{/linkTo}}
+      {{/each}}
+    </ul>
+  </div>
+  
+  <div class="large-3 columns">
+    {{!-- outlet for child song show view --}}
+    {{ outlet }}  
+  </div>
+</div>

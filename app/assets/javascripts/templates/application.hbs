@@ -1,0 +1,15 @@
+<!-- this is the the layout rendered automatically when ember app .create() is called -->
+<div class="row">
+  <div class="large-10 small-12 columns">
+    <ul class="button-group">
+      <li>{{#linkTo "home" class="small button"}}Home{{/linkTo}}</li>
+      <li>{{#linkTo "bio" class="small button"}}About Phil{{/linkTo}}</li>
+      <li>{{#linkTo "songs" class="small button"}}Lyrics and Chords{{/linkTo}}</li>
+      <li><a class="small button" href="#" target="_blank">Listen to some songs</a></li>
+      <li><a class="small button" href="#" target="_blank">Buy some songs</a></li>
+      <li><a class="small button" href="#/contact">Contact Phil</a></li>
+    </ul>
+  </div>
+</div>
+
+{{ outlet }}

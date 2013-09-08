@@ -1,0 +1,16 @@
+// foundation defaults changes
+
+/* Colors */
+$primary-color: #eee;
+// $secondary-color: #eee;
+$button-font-color: #444;
+
+@import "foundation";
+
+// handlebars css
+
+// .active is auto added to any active linkTo
+.active {
+  color: black;
+  background-color: #ccc;
+}
