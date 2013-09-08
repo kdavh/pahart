@@ -1,2 +1,2 @@
-Pah.SongsIndexRoute = Ember.Route.extend
+Pah.SongsRoute = Ember.Route.extend
   model: -> songs
