@@ -5,3 +5,7 @@ Pah.Router.map ()->
   this.route("bio")
   this.resource "songs", ->
     this.resource("song", { path: "/:song_id" })
+    
+  # so that songs can be accessed by album
+  this.resource "albums", ->
+    this.resource("album", { path: "/:album_id"})

@@ -1,2 +1,2 @@
 Pah.SongsRoute = Ember.Route.extend
-  model: -> songs
+  model: -> @get('store').findAll('songss')

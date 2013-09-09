@@ -12,6 +12,12 @@ gem 'haml-rails'
 
 group :test, :development do
   gem 'rspec-rails'
+  gem 'pry-rails'
+end
+
+group :test do
+  gem 'shoulda'
+  gem 'faker'
 end
 
 
