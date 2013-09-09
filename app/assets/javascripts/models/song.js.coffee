@@ -1,2 +1,5 @@
+attr = DS.attr
+
 Pah.Song = DS.Model.extend
-  # url: 'songs'
+  name: attr()
+  id: attr()
