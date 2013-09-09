@@ -1,2 +1,2 @@
-Pah.Songs = DS.Model.extend
+Pah.Song = DS.Model.extend
   # url: 'songs'

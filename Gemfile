@@ -7,7 +7,8 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 gem 'ember-rails'
-gem 'ember-source', '1.0.0.rc7'
+gem 'ember-source', '1.0.0'
+gem 'ember-data-source', '~> 1.0.0.beta.2'
 gem 'haml-rails'
 
 group :test, :development do

@@ -45,7 +45,7 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     diff-lcs (1.2.4)
-    ember-data-source (0.14)
+    ember-data-source (1.0.0.beta.2)
       ember-source
     ember-rails (0.13.0)
       active_model_serializers
@@ -55,7 +55,7 @@ GEM
       execjs (>= 1.2)
       handlebars-source
       railties (>= 3.1)
-    ember-source (1.0.0.rc7)
+    ember-source (1.0.0)
       handlebars-source (= 1.0.12)
     erubis (2.7.0)
     execjs (2.0.1)
@@ -79,15 +79,15 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    method_source (0.8.1)
+    method_source (0.8.2)
     mime-types (1.25)
-    multi_json (1.7.9)
+    multi_json (1.8.0)
     polyglot (0.3.3)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.4)
-    pry-rails (0.3.1)
+    pry-rails (0.3.2)
       pry (>= 0.9.10)
     rack (1.4.5)
     rack-cache (1.2)
@@ -136,7 +136,7 @@ GEM
     shoulda-context (1.1.5)
     shoulda-matchers (2.3.0)
       activesupport (>= 3.0.0)
-    slop (3.4.5)
+    slop (3.4.6)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -160,8 +160,9 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  ember-data-source (~> 1.0.0.beta.2)
   ember-rails
-  ember-source (= 1.0.0.rc7)
+  ember-source (= 1.0.0)
   faker
   haml-rails
   jquery-rails
