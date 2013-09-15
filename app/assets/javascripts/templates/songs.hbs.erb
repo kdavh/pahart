@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="large-12 columns">
+    <div class="center-image panel">
+      <%= image_tag "gig1_960.jpg" %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-4 columns">
+    <div class="panel">
+      <ul class="side-nav">
+        {{#each}}
+          {{#linkTo "song" this}}
+            <li>{{name}}</li>
+          {{/linkTo}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+  
+  <div class="large-8 columns">
+    {{!-- outlet for child song show view --}}
+    {{ outlet }}  
+  </div>
+</div>

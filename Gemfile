@@ -1,24 +1,31 @@
 source 'https://rubygems.org'
+ruby "1.9.3"
 
 gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 gem 'ember-rails'
 gem 'ember-source', '1.0.0'
 gem 'ember-data-source', '~> 1.0.0.beta.2'
+gem 'faker'
+gem 'font-awesome-sass-rails'
 gem 'haml-rails'
 
 group :test, :development do
   gem 'rspec-rails'
   gem 'pry-rails'
+  gem 'sqlite3'
 end
 
 group :test do
   gem 'shoulda'
-  gem 'faker'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 

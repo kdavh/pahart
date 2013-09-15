@@ -1,15 +1,33 @@
 <!-- this is the the layout rendered automatically when ember app .create() is called -->
-<div class="row">
-  <div class="large-10 small-12 columns">
-    <ul class="button-group">
-      <li>{{#linkTo "home" class="small button secondary"}}Home{{/linkTo}}</li>
-      <li>{{#linkTo "bio" class="small button secondary"}}About Phil{{/linkTo}}</li>
-      <li>{{#linkTo "songs.index" class="small button secondary"}}Lyrics and Chords{{/linkTo}}</li>
-      <li>{{#linkTo "home" class="small button secondary"}}Listen to some songs{{/linkTo}}</li>
-      <li>{{#linkTo "home" class="small button secondary"}}Buy some songs{{/linkTo}}</li>
-      <li>{{#linkTo "home" class="small button secondary"}}Contact Phil{{/linkTo}}</li>
+<div class="fixed">
+  <nav class="top-bar">
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <h1><a href="#">pahart </a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
     </ul>
-  </div>
-</div>
 
-{{ outlet }}
+    <section class="top-bar-section">
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li class="divider"></li>
+        <li>
+          {{#linkTo "home"}}<i title="home" class="icon-home"></i>{{/linkTo}}
+        </li>
+        <li class="divider"></li>
+        <li>
+          {{#linkTo "songs.index"}}<i title="music" class="icon-music"></i>{{/linkTo}}
+        </li>
+        <li class="divider"></li>
+        <li>
+          {{#linkTo "info"}}<i title="contact" class="icon-info-sign"></i>{{/linkTo}}
+        </li>
+      </ul>
+    </section>
+  </nav>
+</div>
+<section class="main-content">{{ outlet }}</section>
+

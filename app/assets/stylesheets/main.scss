@@ -2,15 +2,51 @@
 
 /* Colors */
 // $primary-color: #eee;
-// $secondary-color: #eee;
+// $topbar-bg: #eee;
+// $topbar-link-color: #444;
+// $topbar-link-color-hover: #111;
+// $topbar-link-color-active: #111;
+$topbar-height: 55px;
+$topbar-title-font-size: emCalc(23);
+
+$topbar-link-font-size: emCalc(13);
+$topbar-menu-link-font-size: emCalc(33);
+
+
+$secondary-color: #fefefe;
+
 // $button-font-color: #444;
 
 @import "foundation";
+@import "font-awesome";
 
 // handlebars css
 
 // .active is auto added to any active linkTo
-.active {
+.top-bar-section ul li > a.active {
   color: black;
   background-color: #ccc;
+}
+
+
+// custom css
+
+nav.top-bar i {
+  font-size: emCalc(40);
+  line-height: 10px;
+}
+
+.main-content {
+  //make space for header
+  margin-top: 70px;
+}
+.panel.center-image {
+  background-color: #C6D0D8;
+  border-color: #99B1C3;
+  img {
+    -webkit-box-shadow: 0 0 5px #999;
+    -moz-box-shadow: 0 0 5px #999;
+    box-shadow: 0 0 5px #999;
+    border-color: #999;
+  }
 }

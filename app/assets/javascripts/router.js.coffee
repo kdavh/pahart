@@ -2,7 +2,7 @@
 
 Pah.Router.map ()->
   this.route("home", { path: "/"})
-  this.route("bio")
+  this.route("info", { path: "/info"})
   this.resource "songs", ->
     this.resource("song", { path: "/:song_id" })
     
