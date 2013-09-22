@@ -1,8 +1,19 @@
 <div class="row">
-  <div class="large-5 small-5 columns">
-    <img id="welcome-pic" src="<%= image_path('phil1_300.jpg') %>">
-  </div>
-  <div class="large-5 small-5 columns">
-    <p><%= "about phil info text here<br>more great stuff about him<br><br>wow, it just keeps going.".html_safe %> </p>
+  <div class="large-12 small-12 columns">
+    <div id="home-content">
+      <ul>
+        <li>
+          {{#linkTo "songs.index"}}music{{/linkTo}}
+          <ul>
+            <li>album 1 name</li>
+            <li>album 2 name</li>
+          </ul>
+        </li>
+        <li>bandcamp</li>
+        <li>hobbit homes</li>
+        <li>judo championships</li>
+        <li>contact</li>
+      </ul>
+    </div>
   </div>
 </div>
