@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="large-4 columns">
+    <div class="panel">
+      <h4>Songs</h4>
+      <ul>
+        {{#each}}
+          {{#linkTo "song" this}}
+            <li>{{name}}<i class="icon-caret-right right"></i></li>
+          {{/linkTo}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+  
+  <div class="large-8 columns">
+    {{!-- outlet for child song show view --}}
+    {{ outlet }}  
+  </div>
+</div>
