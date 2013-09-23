@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="large-12 small-12 columns">
+    <form id="contact-form" {{action "contactEmail" on="submit"}}>
+    {{#if contactSent}}
+      <div class="alert-box success">Email was sent, thanks!</div>
+    {{/if}}
+    {{#if contactFailed}}
+      <div class="alert-box alert">Please enter a valid email.</div>
+    {{/if}}
+      <fieldset>
+        <legend>Contact</legend>
+        <div class="row">
+          <div class="large-3 columns">
+            {{input value=name type="text" placeholder="name" tabindex='1'}}
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-3 columns" id="email">
+            {{input value=email type="text" placeholder="email" tabindex='2'}}
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="large-3 columns">
+            {{input value=email2 type="text" placeholder="email" tabindex='2'}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 columns">
+            {{input value=subject type="text" placeholder="subject" tabindex='3'}}
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-8 columns">
+            {{#textarea value=note type="text" placeholder="note" tabindex='4'}}{{/textarea}}
+          </div>
+        </div>
+
+        <input class="round button" type="submit" value="Submit" tabindex='5'>
+      </fieldset>
+    </form>
+  </div>
+</div>

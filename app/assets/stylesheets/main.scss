@@ -79,3 +79,13 @@ nav.top-bar i {
     &:hover { color: #2795b6;}
   }
 }
+
+#contact-form textarea {
+  height: 100px;
+  overflow: hidden;
+}
+
+// these styles are to hide decoy fields
+#email {
+  display: none;
+}

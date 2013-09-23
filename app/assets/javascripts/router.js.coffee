@@ -7,5 +7,10 @@ Pah.Router.map ()->
     this.resource "all_songs", { path: "/all_songs" }, ->
       this.resource("song", { path: "/:song_id" })
 
-    this.resource "albums", ->
-    this.resource("album", { path: "album/:album_id"})
+    this.resource "albums", -> # the function call needs to be here
+    # these are not nested under albums because the albums index
+    # view needs to be replaced, instead of more stuff going in its
+    # outlet
+    this.resource "album", { path: "album/:album_id"}, ->
+      this.resource "album_songs", { path: "songs" }, ->
+        this.resource "album_song", {path: "/:song_id"}
