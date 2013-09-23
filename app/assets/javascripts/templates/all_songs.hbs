@@ -4,16 +4,13 @@
       <h4>Songs</h4>
       <ul>
         {{#each}}
-          {{#linkTo "song" this}}
-            <li>{{name}}<i class="icon-caret-right right"></i></li>
+          {{#linkTo "song" this titleBinding=name}}
+            <li>{{display_name}}<i class="icon-caret-right right"></i></li>
           {{/linkTo}}
         {{/each}}
       </ul>
     </div>
   </div>
-  
-  <div class="large-8 columns">
-    {{!-- outlet for child song show view --}}
-    {{ outlet }}  
-  </div>
+  {{!-- outlet for child song show view --}}
+  {{ outlet }}
 </div>

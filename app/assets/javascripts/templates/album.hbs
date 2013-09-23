@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="large-4 columns">
+    <div class="panel">
+      <div class="th">
+        <img {{bindAttr 
+          src="image_full_thumb_url" 
+          alt="title" 
+          title="title"
+        }}>
+      </div>
+      {{outlet album_songs}}
+    </div>
+  </div>
+  
+  {{outlet song}}
+</div>

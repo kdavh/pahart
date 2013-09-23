@@ -1,10 +1,17 @@
 Pah.Song = DS.Model.extend
-  name: DS.attr('string')
-  lyrics: DS.attr('string')
-  chords: DS.attr('string')
-  date_written: DS.attr('string')
+  name: DS.attr()
+  lyrics: DS.attr()
+  chords: DS.attr()
+  date_written: DS.attr()
 
   formatted_lyrics: (->
     @get('lyrics').split("\n").join("<br/>") 
   ).property('lyrics')
 
+  display_name: (->
+    name = @get('name')
+    if name.length > 20
+      name.substring(0, 21) + "..."
+    else
+      name
+  ).property('name')

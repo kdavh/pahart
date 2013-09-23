@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="large-12 columns">
+    <div class="panel">
+      <h4>Albums</h4>
+      {{#each}}
+        <span>
+          {{#linkTo "album" this class="th"}}
+            <img {{bindAttr 
+              src="image_full_thumb_url" 
+              alt="title" 
+              title="title"
+            }}>
+          {{/linkTo}}
+        </span>
+      {{/each}}
+    </div>
+  </div>
+</div>

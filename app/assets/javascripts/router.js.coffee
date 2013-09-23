@@ -8,4 +8,4 @@ Pah.Router.map ()->
       this.resource("song", { path: "/:song_id" })
 
     this.resource "albums", ->
-      this.resource("album", { path: "/:album_id"})
+    this.resource("album", { path: "album/:album_id"})
