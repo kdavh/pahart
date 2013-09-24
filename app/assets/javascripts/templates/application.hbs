@@ -1,33 +1,16 @@
 <!-- this is the the layout rendered automatically when ember app .create() is called -->
-<div class="fixed">
-  <nav class="top-bar">
-    <ul class="title-area">
-      <!-- Title Area -->
-      <li class="name">
-        <h1><a href="#">pahart </a></h1>
-      </li>
-      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-    </ul>
+<div class="row">
+  <div class="large-12 columns main-background">
+    <header id="header">
+      <div class="row">
+        <div class="large-12 columns">
+            {{#linkTo "home" class="menu-item"}}Home{{/linkTo}}
+            {{#linkTo "all_songs.index" class="menu-item"}}Music{{/linkTo}}
+            {{#linkTo "info" class="menu-item"}}Contact{{/linkTo}}
 
-    <section class="top-bar-section">
-      <!-- Left Nav Section -->
-      <ul class="left">
-        <li class="divider"></li>
-        <li>
-          {{#linkTo "home"}}<i title="home" class="icon-home"></i>{{/linkTo}}
-        </li>
-        <li class="divider"></li>
-        <li>
-          {{#linkTo "all_songs.index"}}<i title="music" class="icon-music"></i>{{/linkTo}}
-        </li>
-        <li class="divider"></li>
-        <li>
-          {{#linkTo "info"}}<i title="contact" class="icon-info-sign"></i>{{/linkTo}}
-        </li>
-      </ul>
-    </section>
-  </nav>
+        </div>
+      </div>
+    </header>
+    <section class="main-content">{{ outlet }}</section>
+  </div>
 </div>
-<section class="main-content">{{ outlet }}</section>
-
