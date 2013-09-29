@@ -22,23 +22,22 @@ $secondary-color: #fefefe;
 
 // handlebars css
 
-
+body {
+  background-color: #f8f8f8;
+}
 ul {
   list-style-type: none;
 }
 
 // foundation overrides
-fieldset legend {
-  background-color: #f8f8f8;
-}
+//...
 
 // custom css
 .main-background {
-  background-color: #f8f8f8;
+  background-color: white;
 }
 
 header {
-  // font-size: 20px;
   padding-top: 40px;
   padding-bottom: 50px;
   .menu-item {
@@ -47,23 +46,30 @@ header {
       background-color: #ddd;
     }
     &.active {
-      // font-size: 25px;
       background-color: #ddd;
     }
   }
 }
 
-.center-image {
-  background-color: #C6D0D8;
-  border-color: #99B1C3;
-  .image {
+.floating-name {
+  position: absolute;
+  z-index: 5;
+  left: 40px;
+  color: $primary-color;
+  font-family: 'Copperplate';
+  letter-spacing: 10px;
+  font-size: 4em;
+}
+
+#music-content {
+  .center-image {
     background: image-url("gig1_960.jpg") no-repeat 0 0;
     height:422px;
-    padding-top: 15px;
+    padding-top: 65px;
     padding-left: 30px;
   }
 }
-
+  
 #home-content {
   #home-img {
     background-image: image-url('phil1_470.jpg');
@@ -71,19 +77,14 @@ header {
     background-position: top right;
     height: 1166px;
   }
-  
-  color: grey;
-  font-weight: bold;
-  
-  h1 {
-    color: $primary-color;
-    font-family: 'Copperplate Gothic Bold';
-  }
 }
 
-#contact-form textarea {
-  height: 100px;
-  overflow: hidden;
+#contact-content {
+  padding-top: 50px;
+  textarea {
+    height: 100px;
+    overflow: hidden;
+  }
 }
 
 // these styles are to hide decoy fields

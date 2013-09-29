@@ -1,6 +1,6 @@
-<div class="row">
+<div class="row" id="contact-content">
   <div class="large-12 small-12 columns">
-    <form id="contact-form" {{action "contactEmail" on="submit"}}>
+    <form {{action "contactEmail" on="submit"}}>
     {{#if contactSent}}
       <div class="alert-box success">Email was sent, thanks!</div>
     {{/if}}

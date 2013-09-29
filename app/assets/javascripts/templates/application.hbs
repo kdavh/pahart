@@ -7,10 +7,12 @@
             {{#linkTo "home" class="menu-item"}}Home{{/linkTo}}
             {{#linkTo "all_songs.index" class="menu-item"}}Music{{/linkTo}}
             {{#linkTo "info" class="menu-item"}}Contact{{/linkTo}}
-
         </div>
       </div>
     </header>
-    <section class="main-content">{{ outlet }}</section>
+    <section id="main-content">
+      <div class="floating-name">Phil Hart</div>
+      {{ outlet }}
+    </section>
   </div>
 </div>
