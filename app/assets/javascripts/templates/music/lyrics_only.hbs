@@ -1,0 +1,14 @@
+<div class="row" id="lyrics-only-content">
+  <div class="large-offset-1 large-11 columns">
+    <ul>
+      {{#each}}
+        {{#linkTo "song" this titleBinding=name}}
+          <li>
+            <h2>{{name}}</h2>
+            <p>{{{formatted_lyrics}}}</p>
+          </li>
+        {{/linkTo}}
+      {{/each}}
+    </ul>
+  </div>
+</div>

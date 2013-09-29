@@ -5,12 +5,9 @@ Pah.Router.map ()->
   this.route("info", { path: "/info"})
   this.resource "music", { path: "/music" }, ->
     this.resource "all_songs", { path: "/all_songs" }, ->
+      # here, i should just make an action that displays the lyrics where
+      # the album image was, with a little X to hide and display the album name
       this.resource("song", { path: "/:song_id" })
 
-    this.resource "albums", -> # the function call needs to be here
-    # these are not nested under albums because the albums index
-    # view needs to be replaced, instead of more stuff going in its
-    # outlet
-    this.resource "album", { path: "album/:album_id"}, ->
-      this.resource "album_songs", { path: "songs" }, ->
-        this.resource "album_song", {path: "/:song_id"}
+    # unnest lyrics to remove odd 'listen below' conundrum, or ...
+    this.route "lyrics_only", { path: "/lyrics" }

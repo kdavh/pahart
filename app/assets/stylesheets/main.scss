@@ -85,15 +85,21 @@ header {
     height: 100px;
     overflow: hidden;
   }
+
+  // these styles are to hide decoy fields
+  #email {
+    display: none;
+  }
+
+  #email-field {
+    position: fixed;
+    left: 3000;
+    top: 3000;
+  }
 }
 
-// these styles are to hide decoy fields
-#email {
-  display: none;
-}
-
-#email-field {
-  position: fixed;
-  left: 3000;
-  top: 3000;
+#lyrics-only-content {
+  li {
+    margin-top: 70px;
+  }
 }
