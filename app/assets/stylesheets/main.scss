@@ -1,7 +1,7 @@
 // foundation defaults changes
 
 /* Colors */
-// $primary-color: #eee;
+$primary-color: #808080;
 // $topbar-bg: #eee;
 // $topbar-link-color: #444;
 // $topbar-link-color-hover: #111;
@@ -29,16 +29,16 @@ ul {
 
 // foundation overrides
 fieldset legend {
-  background-color: #eee;
+  background-color: #f8f8f8;
 }
 
 // custom css
 .main-background {
-  background-color: #eee;
+  background-color: #f8f8f8;
 }
 
 header {
-  font-size: 20px;
+  // font-size: 20px;
   padding-top: 40px;
   padding-bottom: 50px;
   .menu-item {
@@ -47,7 +47,7 @@ header {
       background-color: #ddd;
     }
     &.active {
-      font-size: 25px;
+      // font-size: 25px;
       background-color: #ddd;
     }
   }
@@ -65,32 +65,19 @@ header {
 }
 
 #home-content {
-  background-image: image-url('phil1_960.jpg');
-  background-repeat: no-repeat;
-  background-position: top right;
-  height: 1166px;
+  #home-img {
+    background-image: image-url('phil1_470.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 1166px;
+  }
+  
   color: grey;
   font-weight: bold;
-  padding-top: 85px;
-  padding-left: 50px;
-  ul {
-    list-style-type: none;
-  }
-
-  h1,h2 {
-    color: grey;
-    font-family: 'Copperplate Gothic Bold';
-  }
-  h1 { font-size: 3.5em }
-  h2 { font-size: 2.75em }
   
-  li {
-    line-height: 50px;
-    font-size: 27px;
-  }
-  a {
-    color: grey;
-    &:hover { color: #2795b6;}
+  h1 {
+    color: $primary-color;
+    font-family: 'Copperplate Gothic Bold';
   }
 }
 
@@ -102,4 +89,10 @@ header {
 // these styles are to hide decoy fields
 #email {
   display: none;
+}
+
+#email-field {
+  position: fixed;
+  left: 3000;
+  top: 3000;
 }
