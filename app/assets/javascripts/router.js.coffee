@@ -9,5 +9,5 @@ Pah.Router.map ()->
       # the album image was, with a little X to hide and display the album name
       this.resource("song", { path: "/:song_id" })
 
-    # unnest lyrics to remove odd 'listen below' conundrum, or ...
-    this.route "lyrics_only", { path: "/lyrics" }
+  # unnest lyrics to remove odd 'listen below' conundrum, or ...
+  this.route "lyrics_only", { path: "/lyrics" }
