@@ -3,6 +3,7 @@ Pah.Song = DS.Model.extend
   lyrics: DS.attr()
   chords: DS.attr()
   date_written: DS.attr()
+  albums: DS.hasMany('album')
 
   formatted_lyrics: (->
     @get('lyrics').split("\n").join("<br/>") 

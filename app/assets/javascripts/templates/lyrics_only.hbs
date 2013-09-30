@@ -2,12 +2,10 @@
   <div class="large-offset-1 large-11 columns">
     <ul>
       {{#each}}
-        {{#linkTo "song" this titleBinding=name}}
-          <li>
-            <h2>{{name}}</h2>
-            <p>{{{formatted_lyrics}}}</p>
-          </li>
-        {{/linkTo}}
+      <li>
+        <h2>{{name}}</h2>
+        <p>{{{formatted_lyrics}}}</p>
+      </li>
       {{/each}}
     </ul>
   </div>

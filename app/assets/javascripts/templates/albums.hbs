@@ -1,53 +1,32 @@
-<div class="row" id="music-content">
-  <div class="large-12 columns">
-    <div class="center-image">
-      <ul>
-        <li><a href="#albums">listen below, or</a></li>
-        <li><a href="http://philhart.bandcamp.com/" target="_blank">Download from bandcamp.com</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-<div id="albums">
-  <div class="row">
-    <div class="large-4 columns">
-      <div class="panel">
-        <h4>Songs</h4>
-        {{!-- <ul>
-          {{#each}}
-            {{#linkTo "song" this titleBinding=name}}
-              <li>{{display_name}}<i class="icon-caret-right right"></i></li>
-            {{/linkTo}}
-          {{/each}}
-        </ul> --}}
-      </div>
-    </div>
-    {{!-- outlet for child song show view --}}
-    {{ outlet }}
-  </div>
-
-  <div class="row">
-    <div class="large-8 columns">
-    </div>
-  </div>
-
-  {{!-- 
+<div id="albums-content">
   <div class="row">
     <div class="large-12 columns">
-      <div class="panel">
-        <h4>Albums</h4>
-        {{#each}}
-          <span>
-            {{#linkTo "album" this class="th"}}
-              <img {{bindAttr 
-                src="image_full_thumb_url" 
-                alt="title" 
-                title="title"
-              }}>
-            {{/linkTo}}
-          </span>
-        {{/each}}
+      <div class="center-image">
+        <ul>
+          <li><a href="#albums">listen below, or</a></li>
+          <li><a href="http://philhart.bandcamp.com/" target="_blank">Download from bandcamp.com</a></li>
+        </ul>
       </div>
     </div>
-  </div> --}}
+  </div>
+
+  <div id="albums">
+    {{#each}}
+    <div class="row">
+      <div class="large-6 columns">
+        {{#each songs}}
+        <div>{{display_name}}<i class="icon-caret-right right"></i></div>
+        {{/each}}
+      </div>
+
+      <div class="large-offset-1 large-5 columns">
+        <img {{bindAttr 
+          src="image_full_thumb_url" 
+          alt="title" 
+          title="title"
+        }}>
+      </div>
+    </div>
+    {{/each}}
+  </div>
 </div>

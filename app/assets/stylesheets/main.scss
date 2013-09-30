@@ -61,12 +61,18 @@ header {
   font-size: 4em;
 }
 
-#music-content {
+#albums-content {
   .center-image {
     background: image-url("gig1_960.jpg") no-repeat 0 0;
     height:422px;
     padding-top: 65px;
     padding-left: 30px;
+  }
+}
+
+#albums {
+  .row {
+    padding-top: 50px;
   }
 }
   
