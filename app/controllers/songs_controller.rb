@@ -2,8 +2,8 @@ class SongsController < ApplicationController
   respond_to :json
 
   def index
-    @songs = Song.all
+    @albums = Album.all
 
-    respond_with @songs
+    respond_with @albums
   end
 end

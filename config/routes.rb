@@ -1,6 +1,6 @@
 Pahart::Application.routes.draw do
   root to: 'welcome#index'
-  resources :songs
-  resources :albums, only: [:show, :index]
+  resources :songs, only: [:index]
+  resources :albums, only: [:index]
   post '/contact', to: 'emails#contact'
 end
