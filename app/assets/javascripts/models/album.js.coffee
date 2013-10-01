@@ -3,7 +3,7 @@ Pah.Album = DS.Model.extend
   description: DS.attr()
   image_path: DS.attr()
   date_recorded: DS.attr()
-  # songs: DS.hasMany('song')
+  songs: DS.hasMany('song')
 
   image_full_thumb_url: (-> "/assets/thumb_" + @get('image_path') + 
     ".jpg" ).property('image_path')

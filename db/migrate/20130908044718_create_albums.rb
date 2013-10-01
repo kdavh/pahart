@@ -5,6 +5,7 @@ class CreateAlbums < ActiveRecord::Migration
       t.datetime :date_recorded
       t.string :image_path
       t.text :description
+      t.integer :bandcamp_id
 
       t.timestamps
     end
