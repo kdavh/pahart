@@ -22,7 +22,9 @@ ActiveRecord::Base.transaction do
       title: make_title,
       description: Faker::Lorem.paragraph(5),
       date_recorded: Time.now - rand(200).days,
-      image_path: "album_#{n}"
+      image_path: "album_#{n}",
+      bandcamp_name: 'rainbow-gardens',
+      bandcamp_id: 3132328764
     )
   end
 

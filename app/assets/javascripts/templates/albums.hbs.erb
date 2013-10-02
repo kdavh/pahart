@@ -6,12 +6,6 @@
           <li><a href="#albums">listen below, or</a></li>
           <li><a href="http://philhart.bandcamp.com/" target="_blank">Download from bandcamp.com</a></li>
         </ul>
-<audio controls="true" src="http://philhart.bandcamp.com/track/rainbow-gardens-2"></audio>
-<iframe style="border: 0; width: 100%; height: 42px;" src="http://bandcamp.com/EmbeddedPlayer/album=3132328764/size=small/bgcol=ffffff/linkcol=0687f5/artwork=false/t=1/transparent=true/" seamless><a href="http://philhart.bandcamp.com/album/rainbow-gardens">Rainbow Gardens by Phil Hart</a></iframe>
-
-<iframe style="border: 0; width: 100%; height: 42px;" src="http://bandcamp.com/EmbeddedPlayer/album=3132328764/size=small/bgcol=ffffff/linkcol=e99708/artwork=false/t=1/transparent=true/" seamless><a href="http://philhart.bandcamp.com/album/rainbow-gardens">Rainbow Gardens by Phil Hart</a></iframe>
-
-<iframe style="border: 0; width: 100%; height: 42px;" src="http://bandcamp.com/EmbeddedPlayer/album=3132328764/size=small/bgcol=ffffff/linkcol=0687f5/artwork=false/t=2/transparent=true/" seamless><a href="http://philhart.bandcamp.com/album/rainbow-gardens">Rainbow Gardens by Phil Hart</a></iframe>
       </div>
     </div>
   </div>
@@ -19,8 +13,12 @@
     {{#each}}
     <div class="row">
       <div class="large-6 columns">
-        {{#each songs}}
-        <div>{{display_name}}<i class="icon-caret-right right"></i></div>
+        {{#each song_albums}}
+          <iframe 
+            style="border: 0; width: 100%; height: 42px;" 
+            {{bindAttr src="bandcamp_src"}} 
+            seamless>
+          </iframe>
         {{/each}}
       </div>
 

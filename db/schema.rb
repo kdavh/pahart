@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(:version => 20130908045348) do
     t.datetime "date_recorded"
     t.string   "image_path"
     t.text     "description"
+    t.string   "bandcamp_name"
+    t.integer  "bandcamp_id"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
