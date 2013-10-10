@@ -2,8 +2,13 @@
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
 require 'faker'
+require 'seeds_helper'
+require 'seeds_development_words'
+# require 'seeds_production_data'
 include SeedsHelper
 
+ALBUM_BANDCAMP_NUMBERS = ['3132328764', '987155316']
+ALBUM_BANDCAMP_NAMES = ["rainbow-gardens","sing-me-home"]  #10 songs / 9 songs
 ActiveRecord::Base.transaction do
   songs = []
   albums = []
@@ -23,8 +28,8 @@ ActiveRecord::Base.transaction do
       description: Faker::Lorem.paragraph(5),
       date_recorded: Time.now - rand(200).days,
       image_path: "album_#{n}",
-      bandcamp_name: 'rainbow-gardens',
-      bandcamp_id: 3132328764
+      bandcamp_name: ALBUM_BANDCAMP_NAMES[n],
+      bandcamp_id: ALBUM_BANDCAMP_NUMBERS[n]
     )
   end
 

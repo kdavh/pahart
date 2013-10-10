@@ -6,7 +6,7 @@ class CreateAlbums < ActiveRecord::Migration
       t.string :image_path
       t.text :description
       t.string :bandcamp_name
-      t.integer :bandcamp_id
+      t.string :bandcamp_id
 
       t.timestamps
     end
