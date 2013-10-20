@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(:version => 20130908045348) do
     t.string   "image_path"
     t.text     "description"
     t.string   "bandcamp_name"
-    t.integer  "bandcamp_id"
+    t.string   "bandcamp_id"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
@@ -38,10 +38,10 @@ ActiveRecord::Schema.define(:version => 20130908045348) do
   create_table "songs", :force => true do |t|
     t.string   "name"
     t.text     "lyrics"
-    t.text     "chords"
+    t.string   "capo_instructions"
     t.datetime "date_written"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
   end
 
 end

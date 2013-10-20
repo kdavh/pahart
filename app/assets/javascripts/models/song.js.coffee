@@ -1,7 +1,6 @@
 Pah.Song = DS.Model.extend
   name: DS.attr()
   lyrics: DS.attr()
-  chords: DS.attr()
   date_written: DS.attr()
   albums: DS.hasMany('album')
   song_albums: DS.hasMany('songAlbum')

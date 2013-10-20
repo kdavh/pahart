@@ -29,6 +29,10 @@ ul {
   list-style-type: none;
 }
 
+.pre {
+    white-space:pre; /* or pre-wrap if you want wrapping to still work. */
+}
+
 // foundation overrides
 //...
 

@@ -1,8 +1,8 @@
 class Song < ActiveRecord::Base
-  attr_accessible :chords, :date_written, :lyrics, :name
+  attr_accessible :date_written, :lyrics, :name, :capo_instructions
 
   has_many :song_albums
   has_many :albums, through: :song_albums
 
-  validates :chords, :date_written, :lyrics, :name, presence: true
+  validates :lyrics, :name, presence: true
 end
