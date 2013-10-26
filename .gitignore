@@ -17,3 +17,6 @@
 .DS_Store
 
 .swp
+
+# Ignore private info
+/config/local_env.yml
