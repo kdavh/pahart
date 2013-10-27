@@ -1,12 +1,6 @@
 <div class="row" id="contact-content">
   <div class="large-12 small-12 columns">
     <form {{action "contactEmail" on="submit"}}>
-    {{#if contactSent}}
-      <div class="alert-box success">Email was sent, thanks!</div>
-    {{/if}}
-    {{#if contactFailed}}
-      <div class="alert-box alert">Please enter a valid email.</div>
-    {{/if}}
       <fieldset>
         <legend>Contact</legend>
         <div class="row">
@@ -23,11 +17,11 @@
         
         <div class="row" id="email-field">
           <div class="large-3 columns">
-            {{input value=email type="text" placeholder="email" tabindex='-1'}}
+            {{input value=email1 type="text" placeholder="email" tabindex='-1'}}
           </div>
         </div>
         
-        <div class="row">
+        <div class="row" id="other-email">
           <div class="large-3 columns">
             {{input value=email2 type="text" placeholder="email" tabindex='2'}}
           </div>
@@ -39,13 +33,34 @@
         </div>
 
         <div class="row">
-          <div class="large-8 columns">
+          <div class="large-8 columns" id="contact-note">
             {{#textarea value=note type="text" placeholder="note" tabindex='4'}}{{/textarea}}
           </div>
         </div>
 
-        <input class="round button" type="submit" value="Send" tabindex='5'>
+        <div class="row">
+          <div class="large-2 columns">
+            <input class="round button" id="animated-loading" type="submit" value="Send" tabindex='5'>
+          </div>
+          <div class="large-4 columns">
+            <div id="email-sending-loader" class="hidden">
+              <%= image_tag "zoomloader.gif" %> Please wait, your email is being sent.
+            </div>            
+          </div>
+          <div class="large-6 columns"></div>
+        </div>
       </fieldset>
     </form>
   </div>
 </div>
+
+{{#if contactSent}}
+  <div class="alert-box success">
+    Your message was sent.  You should receive a confirmation email shortly.
+  </div>
+{{/if}}
+{{#if contactFailed}}
+  <div class="alert-box alert">
+    Please correct errors.  Make sure you have a valid email and a note.
+  </div>
+{{/if}}

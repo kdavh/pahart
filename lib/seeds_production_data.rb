@@ -195,44 +195,61 @@ module SeedsHelper
 
 
 
-  Curly Maple Back and Sides    (Capo V)  1998 
+  Curly Maple Back and Sides    (Capo V)    1998 
 
   Am                        G        Am                               G          Am   
   She was born in mid-November on a gray Wisconsin morn,
+
                                 G          Am                F                      C
   And her grandpa sent a present celebratin' she was born.
+
          Am                        C                 Dm                F
   The guitar he set her daddy for to sing her lullabies
+
                 Am     G              Am                       F        G            Am
   Like the hills around her home had curly maple back and sides
+
+
               C                                             G            
   Curly maple back and sides, curly maple back and sides,
+
                 Am                      F                         G                        Am
   Like the hills around her home had curly maple back and sides
 
                    G       Am                              G        Am
   Now the maple tree is lovely and its wood is hard as stone,
+
                                    G        Am                              F                           C
   And the young girl grew among them and their seasons were her own.
+
                   Am                 C                      Dm                 F
   And the music in her blood so like the sap began to rise
+
                      Am          G       Am                    F        G            Am
   When she sang with the guitar with curly maple back and sides.
+
                C                                            G
   Curly maple back and sides, curly maple back and sides,
+
                      Am                     F                     G                       Am
   When she sang with the guitar with curly maple back and sides.
 
+
                                   G         Am                            G           Am
   Oh, the sweetness of the music, like the sugar from the tree
+
                                 G           Am                            F                C
   Is the sweetest when it’s shared among your friends and family.
+
                  Am                         C                       Dm                        F
   And we pray the maid will ne’er forget her friends and fam’ly ties
+
                 Am          G       Am                  F         G             Am
   As she plays on her guitar with curly maple back and sides.
+
               C                                              G
   Curly maple back and sides, curly maple back and sides,
+
                  Am                   F                     G                       Am
   As she plays on her guitar with curly maple back and sides.
 
@@ -508,10 +525,49 @@ module SeedsHelper
 
 
 
-  Jesus Was a Migrant
+  Jesus was a migrant       2009
 
-  No lyrics yet
-  
+  When young Jesus went to Egypt
+  I wonder if he had a visa?
+  And did his daddy need a green card
+  To get a legal job?
+  Did the neighbors curse at Mary
+  ‘Cause she just spoke Aramaic?
+  And I wonder if ol’ Pharaoh gave
+  A damn about their God?
+
+  chorus:
+  Well, I believe that Jesus says that we should 
+  Love all of our brothers
+  Including all their fathers and their 
+  Sisters and their mothers.
+  And he doesn’t make exceptions, 
+  For the people we don’t approve of
+  Or for the walls we build or the wars we fight
+  To keep our country pure.
+
+  So when Jesus comes the next time
+  I hope somebody warns him
+  He better bone up on his English,
+  Change his clothes and cut his hair,
+  ‘Cause he kind of fits the profile 
+  Of some guys they got at GITMO
+  And it would sure mess up the rapture 
+  If he ended up down there.
+
+  (chorus)
+
+  And if I understood him, he said that
+  When he shows up back here
+  He’s gonna sneak up and surprise us 
+  Like a robber in the night,
+  And some gun-toting patriot
+  Will probably shoot him on her back porch,
+  And we can’t criticize her
+  ‘Cause, by God, she has the right.
+
+  (chorus)
+
 
 
 

@@ -22,8 +22,27 @@ $secondary-color: #fefefe;
 
 // handlebars css
 
+.alert-box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+// .opaque {
+//   opacity: 100;
+//   transition: opacity 0.2s;
+//   &.faded-out {
+//     opacity: 0;
+//   }
+// }
+
 body {
   background-color: #f8f8f8;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 ul {
   list-style-type: none;
@@ -34,7 +53,9 @@ ul {
 }
 
 // foundation overrides
-//...
+.error input {
+  margin-bottom: 1em;
+}
 
 // custom css
 .main-background {
@@ -53,6 +74,10 @@ header {
       background-color: #ddd;
     }
   }
+}
+
+footer {
+  height: 30px;
 }
 
 .floating-name {
@@ -105,6 +130,10 @@ header {
     position: absolute;
     left: 3000;
     top: 3000;
+  }
+
+  #email-sending-loader {
+    margin-top: 14px;
   }
 }
 

@@ -10,26 +10,14 @@
     </div>
   </div>
   <div id="albums">
-    {{#each}}
     <div class="row">
-      <div class="large-6 columns">
-        {{#each song_albums}}
-          <iframe 
-            style="border: 0; width: 100%; height: 42px;" 
-            {{bindAttr src="bandcamp_src"}} 
-            seamless>
-          </iframe>
-        {{/each}}
+      <div class="large-5 columns">
+        <iframe style="border: 0; width: 350px; height: 791px;" src="http://bandcamp.com/EmbeddedPlayer/album=987155316/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://philhart.bandcamp.com/album/sing-me-home">Sing Me Home by Phil Hart</a></iframe>
       </div>
 
-      <div class="large-offset-1 large-5 columns">
-        <img {{bindAttr 
-          src="image_full_thumb_url" 
-          alt="title" 
-          title="title"
-        }}>
+      <div class="large-offset-2 large-5 columns">
+        <iframe style="border: 0; width: 350px; height: 692px;" src="http://bandcamp.com/EmbeddedPlayer/album=3132328764/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://philhart.bandcamp.com/album/rainbow-gardens">Rainbow Gardens by Phil Hart</a></iframe>
       </div>
     </div>
-    {{/each}}
   </div>
 </div>
