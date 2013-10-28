@@ -4,7 +4,6 @@ class EmailsController < ApplicationController
   def contact
     #for spam bots
     redirect_to root_path if params[:email] || params[:email1]
-
     errors = []
     errors << '#other-email' unless is_email?(params[:email2])
     errors << '#contact-note' unless params[:note].present?

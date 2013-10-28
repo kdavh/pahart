@@ -1,7 +1,9 @@
 class ContactMailer < ActionMailer::Base  
   def contact(params)
     @note           = params[:note]
+    @name           = params[:name]
     @contact_email  = params[:email2]
+    @subject        = params[:subject]
     mail(to: "Phil <#{ENV['GMAIL_USERNAME']}>",
       # from email gets changed to actual sending email by google
       from: "via pahart.com <#{@contact_email}>", 
