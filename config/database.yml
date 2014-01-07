@@ -19,8 +19,14 @@ test:
   timeout: 5000
 
 production:
-  adapter: postgresql
-  database: pahart_production
+  adapter: sqlite3
+  database: db/production.sqlite3
   pool: 5
-  username: pahart
-  password:
+  timeout: 5000
+
+  # pg config
+  # adapter: postgresql
+  # database: pahart_production
+  # pool: 5
+  # username: pahart
+  # password:
