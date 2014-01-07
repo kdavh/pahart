@@ -26,4 +26,6 @@ Pahart::Application.configure do
   config.assets.debug = true
 
   config.ember.variant = :development
+
+  config.eager_load = false
 end

@@ -54,7 +54,7 @@ module Pahart
     config.assets.version = '1.0'
 
     # For heroku
-    config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = true
 
     config.before_configuration do
       env_file = File.join(Rails.root, 'config', 'local_env.yml')
