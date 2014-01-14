@@ -1,2 +1,7 @@
 Use this README file to introduce your application and point to useful places in the API for learning more.
 Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+
+For internal app setup:
+
+On local machine, make config/local_env.yml with GMAIL_USERNAME and GMAIL_PASSWORD variables defined to allow sending emails through google smtp servers.
+You must visit this page http://www.google.com/accounts/DisplayUnlockCaptcha referenced from here (http://stackoverflow.com/questions/6956018/netsmtpauthenticationerror-in-rails-3-1-0-rc5-when-connecting-to-gmailsolved) to allow the new app access to the google account you're setting up. 
