@@ -1,9 +1,7 @@
 class AlbumsController < ApplicationController
-  respond_to :json
-
   def index
     @albums = Album.all
 
-    respond_with @albums
+    render json: @albums
   end
 end

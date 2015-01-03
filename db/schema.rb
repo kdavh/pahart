@@ -13,35 +13,35 @@
 
 ActiveRecord::Schema.define(version: 20130908045348) do
 
-  create_table "albums", force: true do |t|
+  create_table "albums", force: :cascade do |t|
     t.string   "title"
     t.datetime "date_recorded"
     t.string   "image_path"
     t.text     "description"
     t.string   "bandcamp_name"
     t.string   "bandcamp_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
-  create_table "song_albums", force: true do |t|
+  create_table "song_albums", force: :cascade do |t|
     t.integer  "album_id"
     t.integer  "song_id"
     t.integer  "track_number"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "song_albums", ["album_id"], name: "index_song_albums_on_album_id"
   add_index "song_albums", ["song_id"], name: "index_song_albums_on_song_id"
 
-  create_table "songs", force: true do |t|
+  create_table "songs", force: :cascade do |t|
     t.string   "name"
     t.text     "lyrics"
     t.string   "capo_instructions"
     t.datetime "date_written"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

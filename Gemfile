@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
-ruby "2.0.0"
 
-gem 'rails', '4.0.2'
+gem 'rails', '~> 4.0.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -17,7 +16,7 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'sqlite3'
-  gem 'pry-debugger'
+  # gem 'pry-debugger'
 end
 
 group :test do
@@ -42,7 +41,7 @@ gem 'zurb-foundation'
 gem 'uglifier', '>= 1.3.0'
 
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 3.0.0'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
