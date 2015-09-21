@@ -1,3 +1,5 @@
+raise "gmail credentials not properly set in environment" if ENV['GMAIL_USERNAME'].nil? || ENV['GMAIL_PASSWORD'].nil?
+
 ActionMailer::Base.smtp_settings = {
   address:               "smtp.gmail.com",
   port:                  587,
