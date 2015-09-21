@@ -2,23 +2,13 @@
 
 /* Colors */
 $primary-color: #808080;
-// $topbar-bg: #eee;
-// $topbar-link-color: #444;
-// $topbar-link-color-hover: #111;
-// $topbar-link-color-active: #111;
-$topbar-height: 55px;
-$topbar-title-font-size: emCalc(23);
-
-$topbar-link-font-size: emCalc(13);
-$topbar-menu-link-font-size: emCalc(33);
-
-
 $secondary-color: #fefefe;
-
-// $button-font-color: #444;
 
 @import "foundation";
 @import "font-awesome";
+
+$medium-up: $small; // zurb has weird naming
+$small-only: "only screen and (max-width: #{$small-screen})";
 
 // handlebars css
 
@@ -76,25 +66,30 @@ header {
   }
 }
 
+@media #{$small-only} {
+  header .menu-item {
+    display: block;
+  }
+}
+
 footer {
   height: 30px;
 }
 
 .floating-name {
-  position: absolute;
-  z-index: 5;
-  left: 40px;
   color: $primary-color;
   font-family: 'Copperplate';
   letter-spacing: 10px;
   font-size: 4em;
+  z-index: 5;
+  position: relative;
 }
 
 #albums-content {
   .center-image {
     background: image-url("gig1_960.jpg") no-repeat 0 0;
     height:422px;
-    padding-top: 65px;
+    padding-top: 15px;
     padding-left: 30px;
   }
 }
@@ -103,19 +98,35 @@ footer {
   .row {
     padding-top: 50px;
   }
+
+  .album {
+    margin-bottom: 20px;
+  }
+
+  .album-iframe {
+    border: 0;
+    width: 100%;
+    min-height: 750px;
+    max-width: 400px;
+  }
 }
-  
+
 #home-content {
   #home-img {
     background-image: image-url('phil1_470.jpg');
     background-repeat: no-repeat;
     background-position: top right;
-    height: 1166px;
+    height: 600px;
+  }
+}
+
+@media #{$medium-up} {
+  #home-content {
+    margin-top: -50px;
   }
 }
 
 #contact-content {
-  padding-top: 50px;
   textarea {
     height: 100px;
     overflow: hidden;
@@ -138,7 +149,6 @@ footer {
 }
 
 #lyrics-only-content {
-  padding-top: 40px;
   li {
     margin-top: 70px;
   }
