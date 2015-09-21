@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20130908045348) do
 
-  create_table "albums", force: :cascade do |t|
+  create_table "albums", force: true do |t|
     t.string   "title"
     t.datetime "date_recorded"
     t.string   "image_path"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20130908045348) do
     t.datetime "updated_at"
   end
 
-  create_table "song_albums", force: :cascade do |t|
+  create_table "song_albums", force: true do |t|
     t.integer  "album_id"
     t.integer  "song_id"
     t.integer  "track_number"
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20130908045348) do
   add_index "song_albums", ["album_id"], name: "index_song_albums_on_album_id"
   add_index "song_albums", ["song_id"], name: "index_song_albums_on_song_id"
 
-  create_table "songs", force: :cascade do |t|
+  create_table "songs", force: true do |t|
     t.string   "name"
     t.text     "lyrics"
     t.string   "capo_instructions"
