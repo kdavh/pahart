@@ -11,12 +11,14 @@ gem 'ember-data-source', '~> 1.0.0.beta.2'
 gem 'faker'
 gem 'font-awesome-sass-rails'
 gem 'haml-rails'
+gem 'therubyracer', platforms: :ruby
 gem 'unicorn'
+gem 'thin'
+gem 'pg'
 
 group :test, :development do
   gem 'rspec-rails'
   gem 'pry-rails'
-  gem 'sqlite3'
   # gem 'pry-debugger'
 end
 

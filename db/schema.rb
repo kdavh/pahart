@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20130908045348) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "albums", force: true do |t|
     t.string   "title"
     t.datetime "date_recorded"
@@ -32,8 +35,8 @@ ActiveRecord::Schema.define(version: 20130908045348) do
     t.datetime "updated_at"
   end
 
-  add_index "song_albums", ["album_id"], name: "index_song_albums_on_album_id"
-  add_index "song_albums", ["song_id"], name: "index_song_albums_on_song_id"
+  add_index "song_albums", ["album_id"], name: "index_song_albums_on_album_id", using: :btree
+  add_index "song_albums", ["song_id"], name: "index_song_albums_on_song_id", using: :btree
 
   create_table "songs", force: true do |t|
     t.string   "name"
