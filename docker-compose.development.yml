@@ -15,3 +15,5 @@ web:
     - "3000:3000"
   links:
     - db
+  environment:
+    - RAILS_APP_DB_HOST=db
