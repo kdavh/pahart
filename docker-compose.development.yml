@@ -8,9 +8,9 @@ db:
   build: ./docker/postgres/development/
 web:
   build: .
-  command: bash -c "rm -rf /myapp/tmp; bundle exec rake initdb:run; bundle exec rails s -p 3000 -b '0.0.0.0'"
+  dockerfile: ./Dockerfile.development
   volumes:
-    - .:/myapp
+    - .:/rails_app
   ports:
     - "3000:3000"
   links:

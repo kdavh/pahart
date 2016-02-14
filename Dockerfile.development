@@ -1,0 +1,12 @@
+FROM ruby:2.2.2
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev
+RUN mkdir /rails_app
+WORKDIR /rails_app
+ADD Gemfile /rails_app/Gemfile
+ADD Gemfile.lock /rails_app/Gemfile.lock
+RUN bundle install
+# this command isn't needed for the normal usage with docker-compose that starts the image with a Volume that shadows this original directory.  But it doesn't hurt
+ADD . /rails_app
+ENTRYPOINT rm -rf /rails_app/tmp; \
+           bundle exec rake initdb:run; \
+           bundle exec rails s -p 3000 -b '0.0.0.0'

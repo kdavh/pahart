@@ -1,0 +1,13 @@
+# rebuilds an image for docker compose if one hs already been made
+docker-compose -f docker-compose.development.yml --project-name pahart_development build web
+
+# starts the project, making images and containers if need be
+# --force-recreate forces container recreation only
+# --project-name makes sane naming of containers created, also isolates containers created for different environments in this same directory
+
+# development
+docker-compose -f docker-compose.development.yml --project-name pahart_development up -d --force-recreate nginx
+
+# production
+docker-compose -f docker-compose.production.yml --project-name pahart_production up -d --force-recreate nginx
+
