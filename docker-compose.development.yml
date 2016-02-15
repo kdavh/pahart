@@ -6,6 +6,8 @@ nginx:
     - web
 db:
   build: ./docker/postgres/development/
+  volumes:
+    - pahart_postgres_development:/var/lib/postgresql/
 web:
   build: .
   dockerfile: ./Dockerfile.development
