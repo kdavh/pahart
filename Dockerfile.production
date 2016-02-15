@@ -3,7 +3,8 @@ RUN apt-get update -qq && apt-get install -y build-essential libpq-dev
 RUN mkdir /rails_app
 WORKDIR /rails_app
 ADD . /rails_app
-RUN bundle install
+RUN gem install bundler \
+    && bundle install
 ENTRYPOINT rm -rf /rails_app/tmp; \
            bundle exec rake initdb:run RAILS_ENV=production; \
            bundle exec rake assets:precompile; \
