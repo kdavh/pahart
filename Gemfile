@@ -1,19 +1,19 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.0.2'
+gem 'rails', '~> 4'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'ember-rails'
-gem 'ember-source', '1.0.0'
-gem 'ember-data-source', '~> 1.0.0.beta.2'
+gem 'ember-source' #, '1.0.0'
+gem 'ember-data-source' #, '~> 1.0.0.beta.2'
 gem 'faker'
 gem 'font-awesome-sass-rails'
 gem 'haml-rails'
 gem 'therubyracer', platforms: :ruby
-gem 'unicorn'
-gem 'thin'
+# gem 'unicorn'
+# gem 'thin'
 gem 'pg'
 
 group :test, :development do
@@ -34,8 +34,8 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 
-gem 'sass-rails',   '~> 4.0.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'sass-rails',   '~> 4.0'
+gem 'coffee-rails', '~> 4.0'
 gem 'zurb-foundation'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
