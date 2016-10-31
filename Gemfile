@@ -11,6 +11,7 @@ gem 'ember-data-source', '~> 1.0.0.beta.2'
 gem 'faker'
 gem 'font-awesome-sass-rails'
 gem 'haml-rails'
+gem 'newrelic_rpm'
 gem 'therubyracer', platforms: :ruby
 gem 'unicorn'
 gem 'thin'

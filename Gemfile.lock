@@ -93,6 +93,7 @@ GEM
     mime-types (2.4.3)
     minitest (4.7.5)
     multi_json (1.10.1)
+    newrelic_rpm (3.17.0.325)
     pg (0.18.4)
     pry (0.10.1)
       coderay (~> 1.1.0)
@@ -198,6 +199,7 @@ DEPENDENCIES
   font-awesome-sass-rails
   haml-rails
   jquery-rails (~> 3.0.0)
+  newrelic_rpm
   pg
   pry-rails
   rails (~> 4.0.2)
@@ -212,4 +214,4 @@ DEPENDENCIES
   zurb-foundation
 
 BUNDLED WITH
-   1.11.2
+   1.13.6
